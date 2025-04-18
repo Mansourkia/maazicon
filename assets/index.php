@@ -1,2 +1,0 @@
-<?php
-// Selince is golden.
