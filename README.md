@@ -9,7 +9,7 @@ Tested up to: 6.7
 Requires PHP: 5.4
 Stable tag: 1.0.0
 
-This plugin adds the following icons (as both `svg` and `i` tags) to Elementor. You can use the icons for free.
+This plugin adds the following icons to Elementor, available in both svg and i tags.
 
 - [Bootstrap](https://https://github.com/uiwjs/bootstrap-icons)
 - [Webicons](https://github.com/amazingSurge/web-icons)
