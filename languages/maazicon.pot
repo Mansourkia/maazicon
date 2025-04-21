@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Maazicon\n"
-"POT-Creation-Date: 2025-04-09 18:43+0330\n"
-"PO-Revision-Date: 2025-04-09 18:43+0330\n"
+"POT-Creation-Date: 2025-04-22 00:50+0330\n"
+"PO-Revision-Date: 2025-04-22 00:49+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,87 +22,88 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: admin/class-maazicon-admin.php:34 admin/class-maazicon-admin.php:35
-#: admin/class-maazicon-admin.php:52 class-maazicon.php:89
-#: class-maazicon.php:101 class-maazicon.php:113 class-maazicon.php:125
+#: admin/class-maazicon-admin.php:35 admin/class-maazicon-admin.php:36
+#: admin/class-maazicon-admin.php:57 class-maazicon.php:110
+#: class-maazicon.php:122 class-maazicon.php:134 class-maazicon.php:146
 msgid "Maazicon"
 msgstr ""
 
 #. Description of the plugin/theme
-#: admin/class-maazicon-admin.php:54
+#: admin/class-maazicon-admin.php:59
 msgid "Additional icons for Elementor"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:57
+#. translators: 1: Elementor.
+#: admin/class-maazicon-admin.php:64
 #, php-format
 msgid "Please install %s"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:57
+#: admin/class-maazicon-admin.php:64
 msgid "Elementor"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:63
+#: admin/class-maazicon-admin.php:71
 msgid "Settings"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:67
+#: admin/class-maazicon-admin.php:75
 msgid "Render Method"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:70
+#: admin/class-maazicon-admin.php:78
 msgid "Recommended"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:75
+#: admin/class-maazicon-admin.php:83
 msgid "If yout theme does not display the icons correctly, change this option"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:83
+#: admin/class-maazicon-admin.php:91
 msgid "Save Settings"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:94
+#: admin/class-maazicon-admin.php:119
 msgid "Please wait"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:111
+#: admin/class-maazicon-admin.php:120
 msgid "Settings saved"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:113
-msgid "Failed to save settings!"
+#: admin/class-maazicon-admin.php:121
+msgid "Failed to save settings"
 msgstr ""
 
-#: admin/class-maazicon-admin.php:154
+#: admin/class-maazicon-admin.php:138
 msgid "Your connection is not secure."
 msgstr ""
 
-#: admin/class-maazicon-admin.php:160
+#: admin/class-maazicon-admin.php:144 admin/class-maazicon-admin.php:151
 msgid "Authenticaion error."
 msgstr ""
 
-#: admin/class-maazicon-admin.php:166 admin/class-maazicon-admin.php:172
+#: admin/class-maazicon-admin.php:157 admin/class-maazicon-admin.php:163
 msgid "Unknow error."
 msgstr ""
 
-#: admin/class-maazicon-admin.php:179
+#: admin/class-maazicon-admin.php:170
 msgid "Settings saved successfully."
 msgstr ""
 
-#: class-maazicon.php:89
+#: class-maazicon.php:110
 msgid "Bootstrap"
 msgstr ""
 
-#: class-maazicon.php:101
+#: class-maazicon.php:122
 msgid "Webicon"
 msgstr ""
 
-#: class-maazicon.php:113
+#: class-maazicon.php:134
 msgid "Mobirise"
 msgstr ""
 
-#: class-maazicon.php:125
+#: class-maazicon.php:146
 msgid "Simpleline"
 msgstr ""
 

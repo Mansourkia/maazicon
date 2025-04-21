@@ -59,9 +59,30 @@ if ( ! class_exists( 'Maazicon' ) ) {
 
 			add_action( 'setup_theme', array( $this, 'init' ) );
 			add_action( 'init', array( $this, 'load_textdomain' ) );
+			//add_action( 'admin_init', array( $this, 'filesystem' ) );
 
 			register_uninstall_hook( MAAZICON_FILE, array( $this, 'uninstall' ) );
 		}
+
+		// public function filesystem() {
+		// 	if ( ! function_exists( 'WP_Filesystem' ) ) {
+		// 		require_once ABSPATH . 'wp-admin/includes/file.php';
+		// 	}
+
+		// 	global $wp_filesystem;
+
+		// 	WP_Filesystem();
+		// }
+
+		// public function creds() {
+		// 	$url = wp_nonce_url( 'options-general.php?page=maazicon', 'maazicon_creds' );
+			
+		// 	if ( false === ( $creds = request_filesystem_credentials( $url, '', false, false, null ) ) ) {
+		// 		return false;
+		// 	}
+
+		// 	return $creds;
+		// }
 
 		/**
 		 * Initialize.
@@ -243,6 +264,24 @@ if ( ! class_exists( 'Maazicon' ) ) {
 			while ( ! feof( $file ) ) {
 				$txt .= fgets( $file );
 			}
+
+			// $creds = $this->creds();
+
+			// if ( false === $creds ) {
+			// 	return false;
+			// }
+		
+			// global $wp_filesystem;
+
+			// if ( ! WP_Filesystem( $creds ) ) {
+			// 	return false;
+			// }
+
+			// $content = $wp_filesystem->get_contents( $filename );
+			
+			// if ( $content === false ) {
+			// 	return false;
+			// }
 
 			return json_decode( $txt, true );
 		}

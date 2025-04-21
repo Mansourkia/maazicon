@@ -59,13 +59,16 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 				<p><?php echo esc_html( __( "Additional icons for Elementor", 'maazicon' ) ); ?></p>
 	
 				<?php if ( ! defined( 'ELEMENTOR_VERSION' ) ): ?>
-					<p class="notice notice-error"><?php printf( __( "Please install %s", 'maazicon' ), '<a href="https://wordpress.org/plugins/elementor/">' . esc_html( __( 'Elementor' ) ) . '</a>' ); ?></p>
+					<p class="notice notice-error"><?php
+						/* translators: 1: Elementor. */
+						printf( esc_html( __( "Please install %s", 'maazicon' ), '<a href="https://wordpress.org/plugins/elementor/">' . esc_html( __( 'Elementor', 'maazicon' ) ) . '</a>' ) );
+					?></p>
 				<?php endif; ?>
 
 				<br />
 
 				<section class="maazicon-settings" id="maazicon-settings">
-					<h2><?php echo esc_html( __( 'Settings' ) ); ?></h2>
+					<h2><?php echo esc_html( __( 'Settings', 'maazicon' ) ); ?></h2>
 
 					<form>
 						<div class="form-field">
@@ -102,8 +105,8 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 		 * @global $pagenow
 		 */
 		public function enqueue() {
-			wp_enqueue_script( 'maazicon_notice', esc_url( MAAZICON_URI . 'admin/assets/notice.min.js' ), array( 'jquery' ), MAAZICON_VERSION );
-			wp_enqueue_script( 'maazicon_ajax', esc_url( MAAZICON_URI . 'admin/assets/ajax.min.js' ), array( 'jquery' ), MAAZICON_VERSION );
+			wp_enqueue_script( 'maazicon_notice', esc_url( MAAZICON_URI . 'admin/assets/notice.min.js' ), array( 'jquery' ), MAAZICON_VERSION, true );
+			wp_enqueue_script( 'maazicon_ajax', esc_url( MAAZICON_URI . 'admin/assets/ajax.min.js' ), array( 'jquery' ), MAAZICON_VERSION, true );
 
 			wp_add_inline_script( 'maazicon_ajax', '
 				(function($){
@@ -130,7 +133,7 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 		 * @since 1.0.0
 		 */
 		public function ajax() {
-			if ( $_SERVER["REQUEST_METHOD"] !== 'POST' ) {
+			if ( ! array_key_exists( 'REQUEST_METHOD', $_SERVER ) || $_SERVER["REQUEST_METHOD"] !== 'POST' ) {
 				wp_send_json_error( array(
 					'message' => esc_attr( __( 'Your connection is not secure.', 'maazicon' ) ),
 				) );
@@ -161,7 +164,7 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 				) );
 			}
 
-			update_option( 'maazicon_render_method', $_POST['maazicon_render_method'] );
+			update_option( 'maazicon_render_method', sanitize_text_field( wp_unslash( $_POST['maazicon_render_method'] ) ) );
 
 			wp_send_json_success( array(
 				'message' => esc_attr( __( 'Settings saved successfully.', 'maazicon' ) ),
