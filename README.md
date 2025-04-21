@@ -1,15 +1,16 @@
 # Maazicon
 
+Contributors: AmirhosseinMansourkiaei
 License: GPL-3.0
 License URL: https://opensource.org/licenses/GPL-3.0
 Tags: icon,elementor,elementor icon,svg
 Requires at least: 4.0
 Contributors: Webangon
 Tested up to: 6.7
-Requires PHP: 5.4
+Requires PHP: 7.0
 Stable tag: 1.0.0
 
-This plugin adds the following icons to Elementor, available in both svg and i tags.
+This plugin adds the following icons (as both `svg` and `i` tags) to Elementor. You can use the icons for free.
 
 - [Bootstrap](https://https://github.com/uiwjs/bootstrap-icons)
 - [Webicons](https://github.com/amazingSurge/web-icons)
@@ -25,7 +26,7 @@ This plugin adds the following icons to Elementor, available in both svg and i t
 
 ### Requirements
 
-* PHP version 5.4 or greater
+* PHP version 7.0 or greater
 * [Elementor](https://wordpress.org/plugins/elementor/)
 
 ## Contact

@@ -5,6 +5,7 @@
  * Tags: icon,elementor,elementor icon,svg
  * Version: 1.0.0
  * Author: Amirhossein Mansourkiaei
+ * Author URL: https://profiles.wordpress.org/amirhosseinmansourkiaei/
  * Text Domain: maazicon
  * Domain Path: /languages
  * License: GPL-3.0

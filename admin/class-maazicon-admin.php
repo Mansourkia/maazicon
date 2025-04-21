@@ -39,7 +39,11 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 				array( $this, 'menu_page' ),
 			);
 
-			// add_action( "load-$hook", array( $this, 'load' ) );
+			add_action( "load-$hook", array( $this, 'enqueue_scripts' ) );
+		}
+
+		public function enqueue_scripts() {
+			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
 		}
 
 		/**
@@ -55,7 +59,7 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 				<p><?php echo esc_html( __( "Additional icons for Elementor", 'maazicon' ) ); ?></p>
 	
 				<?php if ( ! defined( 'ELEMENTOR_VERSION' ) ): ?>
-					<p class="notice notice-error"><?php printf( __( "Please install %s", 'maazicon' ), '<a href="https://wordpress.org/plugins/elementor/">' . __( 'Elementor' ) . '</a>' ); ?></p>
+					<p class="notice notice-error"><?php printf( __( "Please install %s", 'maazicon' ), '<a href="https://wordpress.org/plugins/elementor/">' . esc_html( __( 'Elementor' ) ) . '</a>' ); ?></p>
 				<?php endif; ?>
 
 				<br />
@@ -80,68 +84,44 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 						<br />
 
 						<div class="form-field form-submit-field">
-							<button type="button" class="button button-primary" onclick="maazicon_save_settings();" id="maazicon_submit_button">
+							<button type="button" class="button button-primary" id="maazicon_submit_button">
 								<?php echo esc_html( __( 'Save Settings', 'maazicon' ) ); ?>
 							</button>
 						</div>
 					</form>
 				</section>
 			</div>
-
-			<script>
-				function maazicon_save_settings() {
-					let $ = jQuery;
-
-					let wait_notice = maazicon_notice( 'info', '<?php echo esc_attr( __( 'Please wait', 'maazicon' ) ); ?>', 1 );
-					$('#maazicon_submit_button').attr('disabled', 'disabled');
-
-					let data = {
-						action                : 'maazicon_save_settings',
-						maazicon_render_method: document.getElementById('maazicon_render_method').value,
-						_maazicon_nonce       : '<?php echo wp_create_nonce( 'maazicon_save_settings' ); ?>',
-					};
-
-					$.post(
-						'<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>',
-						data,
-						function ( response ) {
-							maazicon_remove_notice( wait_notice );
-							$('#maazicon_submit_button').removeAttr('disabled');
-
-							if ( response.success ) {
-								maazicon_notice( 'success', '<?php echo esc_attr( __( 'Settings saved', 'maazicon' ) ); ?>', 1 );
-							} else {
-								maazicon_notice( 'error', '<?php echo esc_attr( __( 'Failed to save settings!', 'maazicon' ) ); ?>', 1 );
-							}
-						}
-					);
-				}
-
-				function maazicon_notice( type, txt, clear = false, dur = 0 ) {
-					let $ = jQuery;
-
-					clear && $('.maazicon-notice').remove();
-
-					if ( txt ) {
-						let notice = $( `<div class="notice notice-${ type } maazicon-notice">` ).html(txt);
-						$('#maazicon-settings form').before( notice );
-
-						if ( Number( dur ) ) {
-							setTimeout( function() {
-								$( notice ).remove();
-								//alert( 'Yu' );
-							}, Number( dur ) );
-						}
-
-						return notice;
-					}
-				}
-
-				function maazicon_remove_notice( notice ) {
-					jQuery( notice ).remove();
-				}
-			</script>
 			<?php
+		}
+
+		/**
+		 * Enqueeus scripts.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @global $pagenow
+		 */
+		public function enqueue() {
+			wp_enqueue_script( 'maazicon_notice', esc_url( MAAZICON_URI . 'admin/assets/notice.min.js' ), array( 'jquery' ), MAAZICON_VERSION );
+			wp_enqueue_script( 'maazicon_ajax', esc_url( MAAZICON_URI . 'admin/assets/ajax.min.js' ), array( 'jquery' ), MAAZICON_VERSION );
+
+			wp_add_inline_script( 'maazicon_ajax', '
+				(function($){
+					$(document).ready(function(){
+						$("#maazicon_submit_button").on("click", function() {
+							maazicon_save_settings({
+								admin_ajax_url: "' . esc_url( admin_url( 'admin-ajax.php' ) ) . '",
+								nonce: "' . esc_attr( wp_create_nonce( 'maazicon_save_settings' ) ) . '",
+								notice: {
+									wait: "' . esc_html( __( 'Please wait', 'maazicon' ) ) . '",
+									success: "' . esc_html( __( 'Settings saved', 'maazicon' ) ) . '",
+									error: "' . esc_html( __( 'Failed to save settings', 'maazicon' ) ) . '",
+								}
+							});
+						});
+					});
+				})( jQuery );
+			', 'before' );
 		}
 
 		/**
@@ -156,12 +136,19 @@ if ( ! class_exists( 'Maazicon_Admin' ) ):
 				) );
 			}
 
-			if ( ! array_key_exists( '_maazicon_nonce', $_POST ) || ! wp_verify_nonce( $_POST['_maazicon_nonce'], 'maazicon_save_settings' ) ) {
+			if ( ! current_user_can( 'manage_options' ) ) {
 				wp_send_json_error( array(
 					'message' => esc_attr( __( 'Authenticaion error.', 'maazicon' ) ),
 				) );
 			}
-			
+
+			// nonce
+			if ( ! array_key_exists( '_maazicon_nonce', $_POST ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_maazicon_nonce'] ) ), 'maazicon_save_settings' ) ) {
+				wp_send_json_error( array(
+					'message' => esc_attr( __( 'Authenticaion error.', 'maazicon' ) ),
+				) );
+			}
+
 			if ( ! array_key_exists( 'maazicon_render_method', $_POST ) ) {
 				wp_send_json_error( array(
 					'message' => esc_attr( __( 'Unknow error.', 'maazicon' ) ),
