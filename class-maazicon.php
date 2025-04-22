@@ -104,7 +104,7 @@ if ( ! class_exists( 'Maazicon' ) ) {
 		 * @return array
 		 */
 		public function register_icons( $tabs ) {
-			// bootstrap icons
+			// bootstrab
 			$tabs['bi'] = array(
 				'name'            => 'bi',
 				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Bootstrap', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
