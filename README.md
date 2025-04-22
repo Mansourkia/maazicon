@@ -27,7 +27,7 @@ This plugin adds additional icons to Elementor. You can use the icons for free.
 
 ### Requirements
 
-* PHP version 7.0 or greater
+* PHP version 7.0 or greater.
 * [Elementor](https://wordpress.org/plugins/elementor/)
 
 ## Contact
