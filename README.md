@@ -7,7 +7,7 @@ Requires at least: 4.0
 Contributors: Webangon
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 This plugin adds additional icons to Elementor. You can use the icons for free.
 
@@ -15,6 +15,11 @@ This plugin adds additional icons to Elementor. You can use the icons for free.
 
 - [Bootstrap](https://https://github.com/uiwjs/bootstrap-icons)
 - [Mobirise](https://mobirise.com)
+- [SimpleLine](https://simplelineicons.github.io/)
+- [Mobirise](https://mobiriseicons.com/)
+- [Prestashop](https://github.com/PrestaShop/prestashop-icon-font)
+- [Linearicons](https://linearicons.com)
+- [Themify](http://themify.me/themify-icons)
 
 ## Installation
 
