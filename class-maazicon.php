@@ -111,20 +111,8 @@ if ( ! class_exists( 'Maazicon' ) ) {
 				'labelIcon'       => 'maazicon-bi maazicon-bi-bootstrap-fill',
 				'prefix'          => 'maazicon-bi-',
 				'displayPrefix'   => 'maazicon-bi',
-				'url'             => MAAZICON_URI . 'assets/bi/style.css?ver=' . MAAZICON_VERSION,
+				'url'             => MAAZICON_URI . 'assets/bi/style.min.css?ver=' . MAAZICON_VERSION,
 				'fetchJson'       => MAAZICON_URI . 'assets/bi/fetch.json',
-				'ver'             => '1.11.3',
-			);
-
-			// webicons
-			$tabs['webicons'] = array(
-				'name'            => 'webicons',
-				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Webicon', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
-				'labelIcon'       => 'maazicon-webicons maazicon-webicons-chat',
-				'prefix'          => 'maazicon-webicons-',
-				'displayPrefix'   => 'maazicon-webicons',
-				'url'             => MAAZICON_URI . 'assets/webicons/style.css?ver=' . MAAZICON_VERSION,
-				'fetchJson'       => MAAZICON_URI . 'assets/webicons/fetch.json',
 				'ver'             => '1.11.3',
 			);
 
@@ -132,7 +120,7 @@ if ( ! class_exists( 'Maazicon' ) ) {
 			$tabs['mobirise'] = array(
 				'name'            => 'mobirise',
 				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Mobirise', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
-				'labelIcon'       => 'maazicon-mobirise maazicon-mobirise-mobirise',
+				'labelIcon'       => 'maazicon-mobirise maazicon-mobirise-cart-add',
 				'prefix'          => 'maazicon-mobirise-',
 				'displayPrefix'   => 'maazicon-mobirise',
 				'url'             => MAAZICON_URI . 'assets/mobirise/style.css?ver=' . MAAZICON_VERSION,
@@ -140,22 +128,73 @@ if ( ! class_exists( 'Maazicon' ) ) {
 				'ver'             => '1.0.0',
 			);
 
+			// prestashop
+			$tabs['prestashop'] = array(
+				'name'            => 'prestashop',
+				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Prestashop', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
+				'labelIcon'       => 'maazicon-prestashop maazicon-prestashop-google',
+				'prefix'          => 'maazicon-prestashop-',
+				'displayPrefix'   => 'maazicon-prestashop',
+				'url'             => MAAZICON_URI . 'assets/prestashop/style.min.css?ver=' . MAAZICON_VERSION,
+				'fetchJson'       => MAAZICON_URI . 'assets/prestashop/fetch.min.json',
+				'ver'             => '1.0.0',
+			);
+
+			// themify
+			$tabs['themify'] = array(
+				'name'            => 'themify',
+				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Themify', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
+				'labelIcon'       => 'maazicon-themify maazicon-themify-palette',
+				'prefix'          => 'maazicon-themify-',
+				'displayPrefix'   => 'maazicon-themify',
+				'url'             => MAAZICON_URI . 'assets/themify/style.min.css?ver=' . MAAZICON_VERSION,
+				'fetchJson'       => MAAZICON_URI . 'assets/themify/fetch.min.json',
+				'ver'             => '1.0.0',
+			);
+
+			// web-icons
+			$tabs['webicons'] = array(
+				'name'            => 'webicons',
+				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Webicons', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
+				'labelIcon'       => 'maazicon-webicons maazicon-webicons-code-unfold',
+				'prefix'          => 'maazicon-webicons-',
+				'displayPrefix'   => 'maazicon-webicons',
+				'url'             => MAAZICON_URI . 'assets/webicons/style.min.css?ver=' . MAAZICON_VERSION,
+				'fetchJson'       => MAAZICON_URI . 'assets/webicons/fetch.min.json',
+				'ver'             => '1.0.0',
+			);
+
+			// linearicons
+			$tabs['linearicons'] = array(
+				'name'            => 'linearicons',
+				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Linearicons', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
+				'labelIcon'       => 'maazicon-linearicons maazicon-linearicons-rocket',
+				'prefix'          => 'maazicon-linearicons-',
+				'displayPrefix'   => 'maazicon-linearicons',
+				'url'             => MAAZICON_URI . 'assets/linearicons/style.min.css?ver=' . MAAZICON_VERSION,
+				'fetchJson'       => MAAZICON_URI . 'assets/linearicons/fetch.min.json',
+				'ver'             => '1.0.0',
+			);
+
 			// simpleline
 			$tabs['simpleline'] = array(
 				'name'            => 'simpleline',
-				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Simpleline', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
-				'labelIcon'       => 'maazicon-simpleline maazicon-simpleline-magnet',
+				'label'           => sprintf( '%1s (%2s)', esc_html__( 'Linearicons', 'maazicon' ), __( "Maazicon", 'maazicon' ) ),
+				'labelIcon'       => 'maazicon-simpleline maazicon-simpleline-grid',
 				'prefix'          => 'maazicon-simpleline-',
 				'displayPrefix'   => 'maazicon-simpleline',
-				'url'             => MAAZICON_URI . 'assets/simpleline/style.css?ver=' . MAAZICON_VERSION,
-				'fetchJson'       => MAAZICON_URI . 'assets/simpleline/fetch.json',
+				'url'             => MAAZICON_URI . 'assets/simpleline/style.min.css?ver=' . MAAZICON_VERSION,
+				'fetchJson'       => MAAZICON_URI . 'assets/simpleline/fetch.min.json',
 				'ver'             => '1.0.0',
 			);
 
 			if ( get_option( 'maazicon_render_method', 'svg' ) === 'svg' ) {
 				$tabs['bi']['render_callback'] = array( $this, 'render_callback' );
-				$tabs['webicons']['render_callback'] = array( $this, 'render_callback' );
 				$tabs['mobirise']['render_callback'] = array( $this, 'render_callback' );
+				$tabs['prestashop']['render_callback'] = array( $this, 'render_callback' );
+				$tabs['themify']['render_callback'] = array( $this, 'render_callback' );
+				$tabs['webicons']['render_callback'] = array( $this, 'render_callback' );
+				$tabs['linearicons']['render_callback'] = array( $this, 'render_callback' );
 				$tabs['simpleline']['render_callback'] = array( $this, 'render_callback' );
 			}
 
@@ -240,8 +279,11 @@ if ( ! class_exists( 'Maazicon' ) ) {
 			$slug = $icon_value;
 
 			$slug = preg_replace( "/maazicon\\-bi\\-?/", '', $slug );
-			$slug = preg_replace( "/maazicon\\-webicons\\-?/", '', $slug );
 			$slug = preg_replace( "/maazicon\\-mobirise\\-?/", '', $slug );
+			$slug = preg_replace( "/maazicon\\-prestashop\\-?/", '', $slug );
+			$slug = preg_replace( "/maazicon\\-themify\\-?/", '', $slug );
+			$slug = preg_replace( "/maazicon\\-webicons\\-?/", '', $slug );
+			$slug = preg_replace( "/maazicon\\-linearicons\\-?/", '', $slug );
 			$slug = preg_replace( "/maazicon\\-simpleline\\-?/", '', $slug );
 			$slug = preg_replace( "/\\s*/", '', $slug );
 
@@ -265,29 +307,11 @@ if ( ! class_exists( 'Maazicon' ) ) {
 				$txt .= fgets( $file );
 			}
 
-			// $creds = $this->creds();
-
-			// if ( false === $creds ) {
-			// 	return false;
-			// }
-		
-			// global $wp_filesystem;
-
-			// if ( ! WP_Filesystem( $creds ) ) {
-			// 	return false;
-			// }
-
-			// $content = $wp_filesystem->get_contents( $filename );
-			
-			// if ( $content === false ) {
-			// 	return false;
-			// }
-
 			return json_decode( $txt, true );
 		}
 
 		/**
-		 * Removes the options.
+		 * Uninstall.
 		 *
 		 * @since 1.0.0
 		 */

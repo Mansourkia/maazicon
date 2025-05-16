@@ -1,91 +1,77 @@
-const fs = require('fs').promises;
-// const { futimes } = require('fs');
-const path = require('path');
+const create_style_files = require('./functions/_style').create_style_files;
+const create_fetch_files = require('./functions/_fetch').create_fetch_files;
+const create_library_files = require('./functions/_library').create_library_files;
+const Source_Modifier = require('./classes/class-source-modifier').Source_Modifier;
+
+// on this document
 const ora = require('ora').default;
-const jsdom = require('jsdom');
-const {JSDOM} = jsdom;
-const style = require('./_style').style;
+const fs = require('fs').promises;
 
-/**
- * Modifies icon source.
- *
- * @param {string} source
- * @return {string}
- */
-function modify( source ) {
-	let dom = new JSDOM(source);
-	let document = dom.window.document;
-	let svg = document.querySelector('svg');
+// dictionary
+let dic_promise = new Promise(function(dic_resolve, dic_reject){
+	(async function () {
+		let spiner = new ora('');
+		spiner.start('create bootstrap dictionary');
+	
+		try {
+			spiner.text = 'read file "libs/bi/font/bootstrap-icons.json"';
+			
+			let content = await fs.readFile( 'libs/bi/font/bootstrap-icons.json', 'utf8' );
+	
+			let dictionary = JSON.parse( content );
+	
+			spiner.text = 'create dictionary files';
+	
+			await fs.writeFile( 'output/bi/dictionary.min.json', JSON.stringify( dictionary ) );
+			await fs.writeFile( 'output/bi/dictionary.json', JSON.stringify( dictionary, null, 1 ) );
+	
+			spiner.succeed('dictionary files created');
 
-	if (!svg) {
-		console.log('error parsing svg', source);
-		return false;
-	}
-
-	let attributesToRemove = Array.from(svg.attributes);
-	let childrenToRmove = Array.from(svg.childNodes);
-
-	for (let attr of attributesToRemove) {
-		if (attr.name !== 'fill' && attr.name !== 'xmlns' && !attr.name.match(/viewbox/i)) {
-			svg.removeAttribute(attr.name);
+			dic_resolve();
+		} catch ( error ) {
+			spiner.succeed( 'Error: ' + error );
+			dic_reject();
 		}
-	}
-
-	for (let child of childrenToRmove) {
-		if (!child.nodeName.match(/path/i)) {
-			child.remove();
-		}
-	}
-
-	return svg.outerHTML;
-}
-
-// create library.json and fetch.json
-(async function() {
-    try {
-        let library = {};
-        let fetch = {icons: []};
-        let files = await fs.readdir('libs/bi/icons/');
-        let spinner = new ora();
-
-		// spiner
-		let proggress = 0;
-		let length = Object.keys(files).length;
-
-		// spiner start
-        spinner.text = 'Reading files ...';
-        spinner.start();
-
-        for (const file_path of files) {
-            let source = await fs.readFile(path.join('libs/bi/icons/', file_path), 'utf8');
-            let slug = file_path.replace(/\.svg$/gi, '');
-
-			// modify source
-			source = modify(source);
-
-            library[slug] = source;
-            fetch.icons.push(slug);
-
-			// ora update
-			proggress++;
-			spinner.text = `parsing ${proggress}/${length}`;
-        }
-
-		// writing file library.json
-        await fs.writeFile('outputs/bi/library.json', JSON.stringify(library /*, null, 2*/));
-        await fs.writeFile('outputs/bi/fetch.json', JSON.stringify(fetch /*, null, 2*/));
-        spinner.succeed('Files have been read and written successfully!');
-    } catch (err) {
-        console.error('Error:', err);
-        spinner.fail('Failed to read files.');
-    }
-})();
-
-// style.css
-style({
-	fonts: ['bootstrap-icons.woff2', 'bootstrap-icons.woff'],
-	fontFamily: 'bootstrap',
-	classPrefix: 'bi',
-	json: 'libs/bi/font/bootstrap-icons.json',
-	output: 'outputs/bi/',
+	})();
 });
+
+dic_promise.then(
+	function() {
+		// styles
+		create_style_files({
+			fonts: ['bootstrap-icons.woff2', 'bootstrap-icons.woff'],
+			font_family: 'Bootstrap',
+			class_prefix: 'bi-',
+			json_file: 'output/bi/dictionary.min.json',
+			output_directory: '../assets/bi/',
+		});
+
+		// fetch
+		create_fetch_files({
+			dictionary_file: 'output/bi/dictionary.min.json',
+			output_directory: '../assets/bi/',
+		});
+
+		// library
+		create_library_files({
+			dictionary_file: 'output/bi/dictionary.min.json',
+			icons_directory: 'libs/bi/icons/',
+			output_directory: '../assets/bi/',
+			modifier: new Source_Modifier( {
+				default_attrs: {
+					'viewBox': '0 0 16 16',
+					'xmlns': 'http://www.w3.org/2000/svg',
+					'width': '16',
+					'height': '16',
+					'fill': 'currentColor',
+				},
+				attrs: {},
+				nodes: [ /path/gi ],
+			} ),
+			icon_file_path_callback: null,
+		});
+	},
+	function (error) {
+		console.log(error);
+	}
+);

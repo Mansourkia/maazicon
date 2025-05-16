@@ -14,9 +14,7 @@ This plugin adds additional icons to Elementor. You can use the icons for free.
 ## Thanks
 
 - [Bootstrap](https://https://github.com/uiwjs/bootstrap-icons)
-- [Webicons](https://github.com/amazingSurge/web-icons)
 - [Mobirise](https://mobirise.com)
-- [SimpleLine](https://github.com/thesabbir/simple-line-icons/)
 
 ## Installation
 

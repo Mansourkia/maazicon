@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'MAAZICON_VERSION', '1.0.0' );
+define( 'MAAZICON_VERSION', '1.0.1' );
 define( 'MAAZICON_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'MAAZICON_URI', trailingslashit( esc_url( plugin_dir_url( __FILE__ ) ) ) );
 define( 'MAAZICON_FILE', __FILE__ );

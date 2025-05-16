@@ -1,0 +1,488 @@
+/*! this file is auto-generated */
+@font-face {
+	font-family: "maazicon_themify";
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/themify.eot") format('eot'), url("fonts/themify.ttf") format('truetype'), url("fonts/themify.woff") format('woff'), url("fonts/themify.svg") format('svg');
+}
+[class^="maazicon-themify-"]::before,
+[class*="maazicon-themify-"]::before {
+	font-family: "maazicon_themify" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	display: inline-block !important;
+	text-transform: none !important;
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.maazicon-themify-wand::before {
+	content: "\e600";
+}
+.maazicon-themify-user::before {
+	content: "\e602";
+}
+.maazicon-themify-unlink::before {
+	content: "\e604";
+}
+.maazicon-themify-thought::before {
+	content: "\e606";
+}
+.maazicon-themify-tag::before {
+	content: "\e608";
+}
+.maazicon-themify-star::before {
+	content: "\e60a";
+}
+.maazicon-themify-signal::before {
+	content: "\e60c";
+}
+.maazicon-themify-shopping-cart-full::before {
+	content: "\e60e";
+}
+.maazicon-themify-zoom-in::before {
+	content: "\e611";
+}
+.maazicon-themify-cut::before {
+	content: "\e613";
+}
+.maazicon-themify-ruler-pencil::before {
+	content: "\e615";
+}
+.maazicon-themify-bookmark-alt::before {
+	content: "\e618";
+}
+.maazicon-themify-pin::before {
+	content: "\e61b";
+}
+.maazicon-themify-pencil-alt::before {
+	content: "\e61d";
+}
+.maazicon-themify-paint-bucket::before {
+	content: "\e61f";
+}
+.maazicon-themify-minus::before {
+	content: "\e622";
+}
+.maazicon-themify-medall-alt::before {
+	content: "\e624";
+}
+.maazicon-themify-arrow-up::before {
+	content: "\e627";
+}
+.maazicon-themify-arrow-left::before {
+	content: "\e629";
+}
+.maazicon-themify-lock::before {
+	content: "\e62b";
+}
+.maazicon-themify-link::before {
+	content: "\e62d";
+}
+.maazicon-themify-layers::before {
+	content: "\e62f";
+}
+.maazicon-themify-key::before {
+	content: "\e631";
+}
+.maazicon-themify-image::before {
+	content: "\e633";
+}
+.maazicon-themify-heart-broken::before {
+	content: "\e635";
+}
+.maazicon-themify-hand-drag::before {
+	content: "\e638";
+}
+.maazicon-themify-flag-alt::before {
+	content: "\e63b";
+}
+.maazicon-themify-eye::before {
+	content: "\e63d";
+}
+.maazicon-themify-exchange-vertical::before {
+	content: "\e63f";
+}
+.maazicon-themify-crown::before {
+	content: "\e642";
+}
+.maazicon-themify-comment::before {
+	content: "\e644";
+}
+.maazicon-themify-close::before {
+	content: "\e646";
+}
+.maazicon-themify-angle-up::before {
+	content: "\e648";
+}
+.maazicon-themify-angle-left::before {
+	content: "\e64a";
+}
+.maazicon-themify-check::before {
+	content: "\e64c";
+}
+.maazicon-themify-camera::before {
+	content: "\e64e";
+}
+.maazicon-themify-brush::before {
+	content: "\e650";
+}
+.maazicon-themify-bolt::before {
+	content: "\e652";
+}
+.maazicon-themify-blackboard::before {
+	content: "\e654";
+}
+.maazicon-themify-arrows-vertical::before {
+	content: "\e657";
+}
+.maazicon-themify-fullscreen::before {
+	content: "\e659";
+}
+.maazicon-themify-arrow-top-left::before {
+	content: "\e65b";
+}
+.maazicon-themify-arrow-circle-right::before {
+	content: "\e65d";
+}
+.maazicon-themify-arrow-circle-down::before {
+	content: "\e65f";
+}
+.maazicon-themify-angle-double-right::before {
+	content: "\e661";
+}
+.maazicon-themify-angle-double-down::before {
+	content: "\e663";
+}
+.maazicon-themify-wheelchair::before {
+	content: "\e666";
+}
+.maazicon-themify-view-list-alt::before {
+	content: "\e668";
+}
+.maazicon-themify-upload::before {
+	content: "\e66b";
+}
+.maazicon-themify-truck::before {
+	content: "\e66d";
+}
+.maazicon-themify-ticket::before {
+	content: "\e66f";
+}
+.maazicon-themify-thumb-down::before {
+	content: "\e671";
+}
+.maazicon-themify-stats-down::before {
+	content: "\e674";
+}
+.maazicon-themify-smallcap::before {
+	content: "\e677";
+}
+.maazicon-themify-shift-left::before {
+	content: "\e67a";
+}
+.maazicon-themify-server::before {
+	content: "\e67d";
+}
+.maazicon-themify-quote-left::before {
+	content: "\e67f";
+}
+.maazicon-themify-power-off::before {
+	content: "\e682";
+}
+.maazicon-themify-paragraph::before {
+	content: "\e685";
+}
+.maazicon-themify-music::before {
+	content: "\e688";
+}
+.maazicon-themify-mouse::before {
+	content: "\e68a";
+}
+.maazicon-themify-money::before {
+	content: "\e68c";
+}
+.maazicon-themify-menu::before {
+	content: "\e68e";
+}
+.maazicon-themify-map::before {
+	content: "\e690";
+}
+.maazicon-themify-loop::before {
+	content: "\e692";
+}
+.maazicon-themify-list::before {
+	content: "\e694";
+}
+.maazicon-themify-Italic::before {
+	content: "\e696";
+}
+.maazicon-themify-infinite::before {
+	content: "\e698";
+}
+.maazicon-themify-hummer::before {
+	content: "\e69a";
+}
+.maazicon-themify-help::before {
+	content: "\e69c";
+}
+.maazicon-themify-harddrives::before {
+	content: "\e69e";
+}
+.maazicon-themify-gift::before {
+	content: "\e6a0";
+}
+.maazicon-themify-filter::before {
+	content: "\e6a2";
+}
+.maazicon-themify-file::before {
+	content: "\e6a4";
+}
+.maazicon-themify-envelope::before {
+	content: "\e6a6";
+}
+.maazicon-themify-direction::before {
+	content: "\e6a8";
+}
+.maazicon-themify-dashboard::before {
+	content: "\e6aa";
+}
+.maazicon-themify-control-shuffle::before {
+	content: "\e6ac";
+}
+.maazicon-themify-control-forward::before {
+	content: "\e6af";
+}
+.maazicon-themify-cloud::before {
+	content: "\e6b1";
+}
+.maazicon-themify-cloud-down::before {
+	content: "\e6b3";
+}
+.maazicon-themify-car::before {
+	content: "\e6b5";
+}
+.maazicon-themify-book::before {
+	content: "\e6b7";
+}
+.maazicon-themify-basketball::before {
+	content: "\e6b9";
+}
+.maazicon-themify-bar-chart-alt::before {
+	content: "\e6bb";
+}
+.maazicon-themify-arrows-corner::before {
+	content: "\e6be";
+}
+.maazicon-themify-align-right::before {
+	content: "\e6c1";
+}
+.maazicon-themify-align-justify::before {
+	content: "\e6c3";
+}
+.maazicon-themify-alert::before {
+	content: "\e6c5";
+}
+.maazicon-themify-agenda::before {
+	content: "\e6c7";
+}
+.maazicon-themify-window::before {
+	content: "\e6c9";
+}
+.maazicon-themify-widget::before {
+	content: "\e6cb";
+}
+.maazicon-themify-wallet::before {
+	content: "\e6cd";
+}
+.maazicon-themify-video-camera::before {
+	content: "\e6cf";
+}
+.maazicon-themify-themify-favicon::before {
+	content: "\e6d2";
+}
+.maazicon-themify-support::before {
+	content: "\e6d4";
+}
+.maazicon-themify-split-v-alt::before {
+	content: "\e6d6";
+}
+.maazicon-themify-shift-right-alt::before {
+	content: "\e6d9";
+}
+.maazicon-themify-ruler-alt-2::before {
+	content: "\e6db";
+}
+.maazicon-themify-pin-alt::before {
+	content: "\e6de";
+}
+.maazicon-themify-palette::before {
+	content: "\e6e0";
+}
+.maazicon-themify-microphone-alt::before {
+	content: "\e6e3";
+}
+.maazicon-themify-line-dotted::before {
+	content: "\e6e6";
+}
+.maazicon-themify-layout-width-full::before {
+	content: "\e6e8";
+}
+.maazicon-themify-layout-width-default-alt::before {
+	content: "\e6ea";
+}
+.maazicon-themify-layout-tab-v::before {
+	content: "\e6ed";
+}
+.maazicon-themify-layout-slider::before {
+	content: "\e6ef";
+}
+.maazicon-themify-layout-sidebar-right::before {
+	content: "\e6f1";
+}
+.maazicon-themify-layout-sidebar-left::before {
+	content: "\e6f3";
+}
+.maazicon-themify-layout-menu::before {
+	content: "\e6f5";
+}
+.maazicon-themify-layout-menu-separated::before {
+	content: "\e6f7";
+}
+.maazicon-themify-layout-media-right::before {
+	content: "\e6fa";
+}
+.maazicon-themify-layout-media-overlay-alt::before {
+	content: "\e6fc";
+}
+.maazicon-themify-layout-media-left-alt::before {
+	content: "\e6fe";
+}
+.maazicon-themify-layout-media-center::before {
+	content: "\e701";
+}
+.maazicon-themify-layout-list-thumb-alt::before {
+	content: "\e703";
+}
+.maazicon-themify-layout-line-solid::before {
+	content: "\e706";
+}
+.maazicon-themify-layout-grid2::before {
+	content: "\e709";
+}
+.maazicon-themify-layout-cta-right::before {
+	content: "\e70b";
+}
+.maazicon-themify-layout-cta-center::before {
+	content: "\e70d";
+}
+.maazicon-themify-layout-cta-btn-left::before {
+	content: "\e70f";
+}
+.maazicon-themify-layout-column2::before {
+	content: "\e712";
+}
+.maazicon-themify-layout-accordion-merged::before {
+	content: "\e714";
+}
+.maazicon-themify-ink-pen::before {
+	content: "\e716";
+}
+.maazicon-themify-help-alt::before {
+	content: "\e718";
+}
+.maazicon-themify-hand-point-up::before {
+	content: "\e71a";
+}
+.maazicon-themify-hand-point-left::before {
+	content: "\e71c";
+}
+.maazicon-themify-gallery::before {
+	content: "\e71e";
+}
+.maazicon-themify-face-sad::before {
+	content: "\e720";
+}
+.maazicon-themify-control-skip-forward::before {
+	content: "\e722";
+}
+.maazicon-themify-control-record::before {
+	content: "\e724";
+}
+.maazicon-themify-comments-smiley::before {
+	content: "\e726";
+}
+.maazicon-themify-vimeo::before {
+	content: "\e729";
+}
+.maazicon-themify-time::before {
+	content: "\e72b";
+}
+.maazicon-themify-skype::before {
+	content: "\e72d";
+}
+.maazicon-themify-share-alt::before {
+	content: "\e72f";
+}
+.maazicon-themify-new-window::before {
+	content: "\e732";
+}
+.maazicon-themify-list-ol::before {
+	content: "\e734";
+}
+.maazicon-themify-layout-sidebar-2::before {
+	content: "\e736";
+}
+.maazicon-themify-layout-grid3-alt::before {
+	content: "\e738";
+}
+.maazicon-themify-layout-column4-alt::before {
+	content: "\e73a";
+}
+.maazicon-themify-layout-column2-alt::before {
+	content: "\e73c";
+}
+.maazicon-themify-github::before {
+	content: "\e73f";
+}
+.maazicon-themify-facebook::before {
+	content: "\e741";
+}
+.maazicon-themify-dribbble::before {
+	content: "\e743";
+}
+.maazicon-themify-save::before {
+	content: "\e746";
+}
+.maazicon-themify-yahoo::before {
+	content: "\e748";
+}
+.maazicon-themify-vimeo-alt::before {
+	content: "\e74a";
+}
+.maazicon-themify-tumblr-alt::before {
+	content: "\e74c";
+}
+.maazicon-themify-soundcloud::before {
+	content: "\e74f";
+}
+.maazicon-themify-sharethis-alt::before {
+	content: "\e751";
+}
+.maazicon-themify-microsoft-alt::before {
+	content: "\e754";
+}
+.maazicon-themify-joomla::before {
+	content: "\e757";
+}
+.maazicon-themify-flickr-alt::before {
+	content: "\e759";
+}
+.maazicon-themify-dropbox-alt::before {
+	content: "\e75c";
+}
+.maazicon-themify-rss-alt::before {
+	content: "\e75f";
+}

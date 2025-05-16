@@ -1,0 +1,107 @@
+/*! this file is auto-generated */
+@font-face {
+	font-family: "maazicon_Prestashop";
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/prestashop-icon-font.eot") format('eot'), url("fonts/prestashop-icon-font.woff") format('woff'), url("fonts/prestashop-icon-font.ttf") format('truetype'), url("fonts/prestashop-icon-font.svg") format('svg');
+}
+[class^="maazicon-prestashop-"]::before,
+[class*="maazicon-prestashop-"]::before {
+	font-family: "maazicon_Prestashop" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	display: inline-block !important;
+	text-transform: none !important;
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.maazicon-prestashop-aim::before {
+	content: "\61";
+}
+.maazicon-prestashop-aws::before {
+	content: "\63";
+}
+.maazicon-prestashop-basecamp::before {
+	content: "\65";
+}
+.maazicon-prestashop-bing::before {
+	content: "\68";
+}
+.maazicon-prestashop-blogger::before {
+	content: "\6a";
+}
+.maazicon-prestashop-brightkite::before {
+	content: "\6c";
+}
+.maazicon-prestashop-coroflot::before {
+	content: "\6f";
+}
+.maazicon-prestashop-dailybooth::before {
+	content: "\71";
+}
+.maazicon-prestashop-designbump::before {
+	content: "\73";
+}
+.maazicon-prestashop-designmoo::before {
+	content: "\75";
+}
+.maazicon-prestashop-digg::before {
+	content: "\77";
+}
+.maazicon-prestashop-diigo::before {
+	content: "\79";
+}
+.maazicon-prestashop-dropbox::before {
+	content: "\41";
+}
+.maazicon-prestashop-dzone::before {
+	content: "\43";
+}
+.maazicon-prestashop-ember::before {
+	content: "\45";
+}
+.maazicon-prestashop-evernote::before {
+	content: "\47";
+}
+.maazicon-prestashop-facebook-alt::before {
+	content: "\49";
+}
+.maazicon-prestashop-facto::before {
+	content: "\4b";
+}
+.maazicon-prestashop-flickr::before {
+	content: "\4d";
+}
+.maazicon-prestashop-formspring::before {
+	content: "\4f";
+}
+.maazicon-prestashop-friendfeed::before {
+	content: "\52";
+}
+.maazicon-prestashop-gdgt::before {
+	content: "\54";
+}
+.maazicon-prestashop-github-alt::before {
+	content: "\56";
+}
+.maazicon-prestashop-google::before {
+	content: "\58";
+}
+.maazicon-prestashop-google-talk::before {
+	content: "\5a";
+}
+.maazicon-prestashop-grooveshark::before {
+	content: "\32";
+}
+.maazicon-prestashop-hi5::before {
+	content: "\34";
+}
+.maazicon-prestashop-hyves::before {
+	content: "\36";
+}
+.maazicon-prestashop-identi::before {
+	content: "\38";
+}

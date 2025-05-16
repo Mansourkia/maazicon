@@ -1,0 +1,242 @@
+/*! this file is auto-generated */
+@font-face {
+	font-family: "maazicon_Linearicons";
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/Linearicons-Free.eot") format('embedded-opentype'), url("fonts/Linearicons-Free.woff2") format('woff2'), url("fonts/Linearicons-Free.woff") format('woff'), url("fonts/Linearicons-Free.ttf") format('truetype'), url("fonts/Linearicons-Free.svg") format('svg');
+}
+[class^="maazicon-linearicons-"]::before,
+[class*="maazicon-linearicons-"]::before {
+	font-family: "maazicon_Linearicons" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	display: inline-block !important;
+	text-transform: none !important;
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.maazicon-linearicons-home::before {
+	content: "\e800";
+}
+.maazicon-linearicons-pencil::before {
+	content: "\e802";
+}
+.maazicon-linearicons-drop::before {
+	content: "\e804";
+}
+.maazicon-linearicons-poop::before {
+	content: "\e806";
+}
+.maazicon-linearicons-moon::before {
+	content: "\e808";
+}
+.maazicon-linearicons-cloud-upload::before {
+	content: "\e80a";
+}
+.maazicon-linearicons-cloud-sync::before {
+	content: "\e80c";
+}
+.maazicon-linearicons-database::before {
+	content: "\e80e";
+}
+.maazicon-linearicons-trash::before {
+	content: "\e811";
+}
+.maazicon-linearicons-heart::before {
+	content: "\e813";
+}
+.maazicon-linearicons-star-half::before {
+	content: "\e815";
+}
+.maazicon-linearicons-flag::before {
+	content: "\e817";
+}
+.maazicon-linearicons-paperclip::before {
+	content: "\e819";
+}
+.maazicon-linearicons-printer::before {
+	content: "\e81c";
+}
+.maazicon-linearicons-file-add::before {
+	content: "\e81e";
+}
+.maazicon-linearicons-graduation-hat::before {
+	content: "\e821";
+}
+.maazicon-linearicons-film-play::before {
+	content: "\e824";
+}
+.maazicon-linearicons-camera::before {
+	content: "\e826";
+}
+.maazicon-linearicons-book::before {
+	content: "\e828";
+}
+.maazicon-linearicons-user::before {
+	content: "\e82a";
+}
+.maazicon-linearicons-shirt::before {
+	content: "\e82c";
+}
+.maazicon-linearicons-cart::before {
+	content: "\e82e";
+}
+.maazicon-linearicons-phone-handset::before {
+	content: "\e830";
+}
+.maazicon-linearicons-map-marker::before {
+	content: "\e833";
+}
+.maazicon-linearicons-calendar-full::before {
+	content: "\e836";
+}
+.maazicon-linearicons-screen::before {
+	content: "\e839";
+}
+.maazicon-linearicons-tablet::before {
+	content: "\e83b";
+}
+.maazicon-linearicons-laptop-phone::before {
+	content: "\e83d";
+}
+.maazicon-linearicons-bubble::before {
+	content: "\e83f";
+}
+.maazicon-linearicons-construction::before {
+	content: "\e841";
+}
+.maazicon-linearicons-gift::before {
+	content: "\e844";
+}
+.maazicon-linearicons-linearicons::before {
+	content: "\e846";
+}
+.maazicon-linearicons-leaf::before {
+	content: "\e849";
+}
+.maazicon-linearicons-rocket::before {
+	content: "\e84b";
+}
+.maazicon-linearicons-bus::before {
+	content: "\e84d";
+}
+.maazicon-linearicons-train::before {
+	content: "\e84f";
+}
+.maazicon-linearicons-wheelchair::before {
+	content: "\e851";
+}
+.maazicon-linearicons-smile::before {
+	content: "\e854";
+}
+.maazicon-linearicons-neutral::before {
+	content: "\e856";
+}
+.maazicon-linearicons-alarm::before {
+	content: "\e858";
+}
+.maazicon-linearicons-volume-high::before {
+	content: "\e85a";
+}
+.maazicon-linearicons-volume-low::before {
+	content: "\e85c";
+}
+.maazicon-linearicons-hourglass::before {
+	content: "\e85f";
+}
+.maazicon-linearicons-sync::before {
+	content: "\e862";
+}
+.maazicon-linearicons-clock::before {
+	content: "\e864";
+}
+.maazicon-linearicons-upload::before {
+	content: "\e866";
+}
+.maazicon-linearicons-exit-up::before {
+	content: "\e868";
+}
+.maazicon-linearicons-link::before {
+	content: "\e86b";
+}
+.maazicon-linearicons-thumbs-up::before {
+	content: "\e86d";
+}
+.maazicon-linearicons-magnifier::before {
+	content: "\e86f";
+}
+.maazicon-linearicons-list::before {
+	content: "\e872";
+}
+.maazicon-linearicons-chevron-down::before {
+	content: "\e874";
+}
+.maazicon-linearicons-chevron-right::before {
+	content: "\e876";
+}
+.maazicon-linearicons-arrow-left::before {
+	content: "\e879";
+}
+.maazicon-linearicons-move::before {
+	content: "\e87b";
+}
+.maazicon-linearicons-question-circle::before {
+	content: "\e87d";
+}
+.maazicon-linearicons-cross-circle::before {
+	content: "\e880";
+}
+.maazicon-linearicons-circle-minus::before {
+	content: "\e882";
+}
+.maazicon-linearicons-arrow-down-circle::before {
+	content: "\e884";
+}
+.maazicon-linearicons-arrow-right-circle::before {
+	content: "\e886";
+}
+.maazicon-linearicons-chevron-down-circle::before {
+	content: "\e888";
+}
+.maazicon-linearicons-chevron-right-circle::before {
+	content: "\e88a";
+}
+.maazicon-linearicons-frame-contract::before {
+	content: "\e88d";
+}
+.maazicon-linearicons-text-format::before {
+	content: "\e890";
+}
+.maazicon-linearicons-text-size::before {
+	content: "\e892";
+}
+.maazicon-linearicons-underline::before {
+	content: "\e895";
+}
+.maazicon-linearicons-highlight::before {
+	content: "\e897";
+}
+.maazicon-linearicons-text-align-center::before {
+	content: "\e899";
+}
+.maazicon-linearicons-text-align-justify::before {
+	content: "\e89b";
+}
+.maazicon-linearicons-indent-decrease::before {
+	content: "\e89e";
+}
+.maazicon-linearicons-direction-rtl::before {
+	content: "\e8a1";
+}
+.maazicon-linearicons-sort-amount-asc::before {
+	content: "\e8a4";
+}
+.maazicon-linearicons-pointer-right::before {
+	content: "\e8a7";
+}
+.maazicon-linearicons-pointer-left::before {
+	content: "\e8a9";
+}

@@ -1,144 +1,224 @@
-@font-face{font-family:"maazicon-mobirise";font-weight:normal;font-style:normal;src:url('fonts/mobirise.woff') format('woff'),url('fonts/mobirise.ttf') format('truetype'),url('fonts/mobirise.svg') format('svg')}
-[class^="mobirise-"]::before,[class*="mobirise"]::before{font-family:"maazicon-mobirise"!important;font-style:normal!important;font-weight:normal!important;font-variant:normal!important;display:inline-block!important;text-transform:none!important;speak:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.maazicon-mobirise-add-submenu::before{content:"\e900"}
-.maazicon-mobirise-alert::before{content:"\e901"}
-.maazicon-mobirise-align-center::before{content:"\e902"}
-.maazicon-mobirise-align-justify::before{content:"\e903"}
-.maazicon-mobirise-align-left::before{content:"\e904"}
-.maazicon-mobirise-align-right::before{content:"\e905"}
-.maazicon-mobirise-android::before{content:"\e906"}
-.maazicon-mobirise-apple::before{content:"\e907"}
-.maazicon-mobirise-arrow-down::before{content:"\e908"}
-.maazicon-mobirise-arrow-next::before{content:"\e909"}
-.maazicon-mobirise-arrow-prev::before{content:"\e90a"}
-.maazicon-mobirise-arrow-up::before{content:"\e90b"}
-.maazicon-mobirise-bold::before{content:"\e90c"}
-.maazicon-mobirise-bookmark::before{content:"\e90d"}
-.maazicon-mobirise-bootstrap::before{content:"\e90e"}
-.maazicon-mobirise-briefcase::before{content:"\e90f"}
-.maazicon-mobirise-browse::before{content:"\e910"}
-.maazicon-mobirise-bulleted-list::before{content:"\e911"}
-.maazicon-mobirise-calendar::before{content:"\e912"}
-.maazicon-mobirise-camera::before{content:"\e913"}
-.maazicon-mobirise-cart-add::before{content:"\e914"}
-.maazicon-mobirise-cart-full::before{content:"\e915"}
-.maazicon-mobirise-cash::before{content:"\e916"}
-.maazicon-mobirise-change-style::before{content:"\e917"}
-.maazicon-mobirise-chat::before{content:"\e918"}
-.maazicon-mobirise-clock::before{content:"\e919"}
-.maazicon-mobirise-close::before{content:"\e91a"}
-.maazicon-mobirise-cloud::before{content:"\e91b"}
-.maazicon-mobirise-code::before{content:"\e91c"}
-.maazicon-mobirise-contact-form::before{content:"\e91d"}
-.maazicon-mobirise-credit-card::before{content:"\e91e"}
-.maazicon-mobirise-cursor-click::before{content:"\e91f"}
-.maazicon-mobirise-cust-feedback::before{content:"\e920"}
-.maazicon-mobirise-database::before{content:"\e921"}
-.maazicon-mobirise-delivery::before{content:"\e922"}
-.maazicon-mobirise-desktop::before{content:"\e923"}
-.maazicon-mobirise-devices::before{content:"\e924"}
-.maazicon-mobirise-down::before{content:"\e925"}
-.maazicon-mobirise-download::before{content:"\e926"}
-.maazicon-mobirise-drag-n-drop::before{content:"\e927"}
-.maazicon-mobirise-edit::before{content:"\e929"}
-.maazicon-mobirise-error::before{content:"\e92b"}
-.maazicon-mobirise-extension::before{content:"\e92c"}
-.maazicon-mobirise-features::before{content:"\e92d"}
-.maazicon-mobirise-file::before{content:"\e92e"}
-.maazicon-mobirise-flag::before{content:"\e92f"}
-.maazicon-mobirise-folder::before{content:"\e930"}
-.maazicon-mobirise-gift::before{content:"\e931"}
-.maazicon-mobirise-github::before{content:"\e932"}
-.maazicon-mobirise-globe::before{content:"\e934"}
-.maazicon-mobirise-growing-chart::before{content:"\e935"}
-.maazicon-mobirise-hearth::before{content:"\e936"}
-.maazicon-mobirise-help::before{content:"\e937"}
-.maazicon-mobirise-home::before{content:"\e938"}
-.maazicon-mobirise-hot-cup::before{content:"\e939"}
-.maazicon-mobirise-idea::before{content:"\e93a"}
-.maazicon-mobirise-image-gallery::before{content:"\e93b"}
-.maazicon-mobirise-image-slider::before{content:"\e93c"}
-.maazicon-mobirise-info::before{content:"\e93d"}
-.maazicon-mobirise-italic::before{content:"\e93e"}
-.maazicon-mobirise-key::before{content:"\e93f"}
-.maazicon-mobirise-laptop::before{content:"\e940"}
-.maazicon-mobirise-layers::before{content:"\e941"}
-.maazicon-mobirise-left-right::before{content:"\e942"}
-.maazicon-mobirise-left::before{content:"\e943"}
-.maazicon-mobirise-letter::before{content:"\e944"}
-.maazicon-mobirise-like::before{content:"\e945"}
-.maazicon-mobirise-link::before{content:"\e946"}
-.maazicon-mobirise-lock::before{content:"\e947"}
-.maazicon-mobirise-login::before{content:"\e948"}
-.maazicon-mobirise-logout::before{content:"\e949"}
-.maazicon-mobirise-magic-stick::before{content:"\e94a"}
-.maazicon-mobirise-map-pin::before{content:"\e94b"}
-.maazicon-mobirise-menu::before{content:"\e94c"}
-.maazicon-mobirise-mobile::before{content:"\e94d"}
-.maazicon-mobirise-mobirise::before{content:"\e94f"}
-.maazicon-mobirise-more-horizontal::before{content:"\e950"}
-.maazicon-mobirise-more-vertical::before{content:"\e951"}
-.maazicon-mobirise-music::before{content:"\e952"}
-.maazicon-mobirise-new-file::before{content:"\e953"}
-.maazicon-mobirise-numbered-list::before{content:"\e954"}
-.maazicon-mobirise-opened-folder::before{content:"\e955"}
-.maazicon-mobirise-pages::before{content:"\e956"}
-.maazicon-mobirise-paper-plane::before{content:"\e957"}
-.maazicon-mobirise-paperclip::before{content:"\e958"}
-.maazicon-mobirise-photo::before{content:"\e959"}
-.maazicon-mobirise-photos::before{content:"\e95a"}
-.maazicon-mobirise-pin::before{content:"\e95b"}
-.maazicon-mobirise-play::before{content:"\e95c"}
-.maazicon-mobirise-plus::before{content:"\e95d"}
-.maazicon-mobirise-preview::before{content:"\e95e"}
-.maazicon-mobirise-print::before{content:"\e95f"}
-.maazicon-mobirise-protect::before{content:"\e960"}
-.maazicon-mobirise-question::before{content:"\e961"}
-.maazicon-mobirise-quote-left::before{content:"\e962"}
-.maazicon-mobirise-quote-right::before{content:"\e963"}
-.maazicon-mobirise-redo::before{content:"\e964"}
-.maazicon-mobirise-refresh::before{content:"\e965"}
-.maazicon-mobirise-responsive::before{content:"\e966"}
-.maazicon-mobirise-right::before{content:"\e967"}
-.maazicon-mobirise-rocket::before{content:"\e968"}
-.maazicon-mobirise-sad-face::before{content:"\e969"}
-.maazicon-mobirise-sale::before{content:"\e96a"}
-.maazicon-mobirise-save::before{content:"\e96b"}
-.maazicon-mobirise-search::before{content:"\e96c"}
-.maazicon-mobirise-setting::before{content:"\e96d"}
-.maazicon-mobirise-share::before{content:"\e970"}
-.maazicon-mobirise-shopping-bag::before{content:"\e971"}
-.maazicon-mobirise-shopping-basket::before{content:"\e972"}
-.maazicon-mobirise-shopping-cart::before{content:"\e973"}
-.maazicon-mobirise-sites::before{content:"\e974"}
-.maazicon-mobirise-smile-face::before{content:"\e975"}
-.maazicon-mobirise-speed::before{content:"\e976"}
-.maazicon-mobirise-star::before{content:"\e977"}
-.maazicon-mobirise-success::before{content:"\e978"}
-.maazicon-mobirise-sun::before{content:"\e979"}
-.maazicon-mobirise-tablet-vertical::before{content:"\e97b"}
-.maazicon-mobirise-tablet::before{content:"\e97c"}
-.maazicon-mobirise-target::before{content:"\e97d"}
-.maazicon-mobirise-timer::before{content:"\e97e"}
-.maazicon-mobirise-to-ftp::before{content:"\e97f"}
-.maazicon-mobirise-to-local-drive::before{content:"\e980"}
-.maazicon-mobirise-touch-swipe::before{content:"\e981"}
-.maazicon-mobirise-touch::before{content:"\e982"}
-.maazicon-mobirise-trash::before{content:"\e983"}
-.maazicon-mobirise-underline::before{content:"\e984"}
-.maazicon-mobirise-undo::before{content:"\e985"}
-.maazicon-mobirise-unlink::before{content:"\e986"}
-.maazicon-mobirise-unlock::before{content:"\e987"}
-.maazicon-mobirise-up-down::before{content:"\e988"}
-.maazicon-mobirise-up::before{content:"\e989"}
-.maazicon-mobirise-update::before{content:"\e98a"}
-.maazicon-mobirise-upload::before{content:"\e98b"}
-.maazicon-mobirise-user::before{content:"\e98c"}
-.maazicon-mobirise-users::before{content:"\e98e"}
-.maazicon-mobirise-video-play::before{content:"\e98f"}
-.maazicon-mobirise-video::before{content:"\e990"}
-.maazicon-mobirise-watch::before{content:"\e991"}
-.maazicon-mobirise-website-theme::before{content:"\e992"}
-.maazicon-mobirise-wifi::before{content:"\e993"}
-.maazicon-mobirise-windows::before{content:"\e994"}
-.maazicon-mobirise-zoom-out::before{content:"\e995"}
+/*! this file is auto-generated */
+@font-face {
+	font-family: "maazicon_Mobirise";
+	font-weight: normal;
+	font-style: normal;
+	src: url("fonts/mobirise.eot") format('eot'), url("fonts/mobirise.ttf") format('truetype'), url("fonts/mobirise.woff") format('woff'), url("fonts/mobirise.svg") format('svg');
+}
+[class^="maazicon-mobirise-"]::before,
+[class*="maazicon-mobirise-"]::before {
+	font-family: "maazicon_Mobirise" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	display: inline-block !important;
+	text-transform: none !important;
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.maazicon-mobirise-add-submenu::before {
+	content: "\e900";
+}
+.maazicon-mobirise-align-justify::before {
+	content: "\e903";
+}
+.maazicon-mobirise-android::before {
+	content: "\e906";
+}
+.maazicon-mobirise-arrow-down::before {
+	content: "\e908";
+}
+.maazicon-mobirise-arrow-prev::before {
+	content: "\e90a";
+}
+.maazicon-mobirise-bold::before {
+	content: "\e90c";
+}
+.maazicon-mobirise-bootstrap::before {
+	content: "\e90e";
+}
+.maazicon-mobirise-browse::before {
+	content: "\e910";
+}
+.maazicon-mobirise-calendar::before {
+	content: "\e912";
+}
+.maazicon-mobirise-cart-add::before {
+	content: "\e914";
+}
+.maazicon-mobirise-cash::before {
+	content: "\e916";
+}
+.maazicon-mobirise-chat::before {
+	content: "\e918";
+}
+.maazicon-mobirise-close::before {
+	content: "\e91a";
+}
+.maazicon-mobirise-code::before {
+	content: "\e91c";
+}
+.maazicon-mobirise-credit-card::before {
+	content: "\e91e";
+}
+.maazicon-mobirise-cust-feedback::before {
+	content: "\e920";
+}
+.maazicon-mobirise-desktop::before {
+	content: "\e923";
+}
+.maazicon-mobirise-down::before {
+	content: "\e925";
+}
+.maazicon-mobirise-drag-n-drop::before {
+	content: "\e927";
+}
+.maazicon-mobirise-edit::before {
+	content: "\e929";
+}
+.maazicon-mobirise-error::before {
+	content: "\e92b";
+}
+.maazicon-mobirise-features::before {
+	content: "\e92d";
+}
+.maazicon-mobirise-folder::before {
+	content: "\e930";
+}
+.maazicon-mobirise-github::before {
+	content: "\e932";
+}
+.maazicon-mobirise-globe::before {
+	content: "\e934";
+}
+.maazicon-mobirise-hearth::before {
+	content: "\e936";
+}
+.maazicon-mobirise-home::before {
+	content: "\e938";
+}
+.maazicon-mobirise-idea::before {
+	content: "\e93a";
+}
+.maazicon-mobirise-image-slider::before {
+	content: "\e93c";
+}
+.maazicon-mobirise-key::before {
+	content: "\e93f";
+}
+.maazicon-mobirise-layers::before {
+	content: "\e941";
+}
+.maazicon-mobirise-left::before {
+	content: "\e943";
+}
+.maazicon-mobirise-like::before {
+	content: "\e945";
+}
+.maazicon-mobirise-lock::before {
+	content: "\e947";
+}
+.maazicon-mobirise-logout::before {
+	content: "\e949";
+}
+.maazicon-mobirise-map-pin::before {
+	content: "\e94b";
+}
+.maazicon-mobirise-mobile2::before {
+	content: "\e94e";
+}
+.maazicon-mobirise-more-horizontal::before {
+	content: "\e950";
+}
+.maazicon-mobirise-music::before {
+	content: "\e952";
+}
+.maazicon-mobirise-numbered-list::before {
+	content: "\e954";
+}
+.maazicon-mobirise-pages::before {
+	content: "\e956";
+}
+.maazicon-mobirise-paperclip::before {
+	content: "\e958";
+}
+.maazicon-mobirise-pin::before {
+	content: "\e95b";
+}
+.maazicon-mobirise-plus::before {
+	content: "\e95d";
+}
+.maazicon-mobirise-print::before {
+	content: "\e95f";
+}
+.maazicon-mobirise-question::before {
+	content: "\e961";
+}
+.maazicon-mobirise-quote-right::before {
+	content: "\e963";
+}
+.maazicon-mobirise-responsive::before {
+	content: "\e966";
+}
+.maazicon-mobirise-sad-face::before {
+	content: "\e969";
+}
+.maazicon-mobirise-search::before {
+	content: "\e96c";
+}
+.maazicon-mobirise-setting2::before {
+	content: "\e96e";
+}
+.maazicon-mobirise-share::before {
+	content: "\e970";
+}
+.maazicon-mobirise-shopping-basket::before {
+	content: "\e972";
+}
+.maazicon-mobirise-sites::before {
+	content: "\e974";
+}
+.maazicon-mobirise-speed::before {
+	content: "\e976";
+}
+.maazicon-mobirise-success::before {
+	content: "\e978";
+}
+.maazicon-mobirise-tablet-vertical::before {
+	content: "\e97b";
+}
+.maazicon-mobirise-timer::before {
+	content: "\e97e";
+}
+.maazicon-mobirise-to-local-drive::before {
+	content: "\e980";
+}
+.maazicon-mobirise-trash::before {
+	content: "\e983";
+}
+.maazicon-mobirise-undo::before {
+	content: "\e985";
+}
+.maazicon-mobirise-unlock::before {
+	content: "\e987";
+}
+.maazicon-mobirise-up::before {
+	content: "\e989";
+}
+.maazicon-mobirise-upload::before {
+	content: "\e98b";
+}
+.maazicon-mobirise-user2::before {
+	content: "\e98d";
+}
+.maazicon-mobirise-video-play::before {
+	content: "\e98f";
+}
+.maazicon-mobirise-website-theme::before {
+	content: "\e992";
+}
+.maazicon-mobirise-zoom-out::before {
+	content: "\e995";
+}
