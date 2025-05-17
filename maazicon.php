@@ -3,7 +3,7 @@
  * Plugin Name: Maazicon
  * Description: Additional icons for Elementor
  * Tags: icon,elementor,elementor icon,svg
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Amirhossein Mansourkiaei
  * Author URL: https://profiles.wordpress.org/amirhosseinmansourkiaei/
  * Text Domain: maazicon
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'MAAZICON_VERSION', '1.0.1' );
+define( 'MAAZICON_VERSION', '1.0.2' );
 define( 'MAAZICON_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'MAAZICON_URI', trailingslashit( esc_url( plugin_dir_url( __FILE__ ) ) ) );
 define( 'MAAZICON_FILE', __FILE__ );
