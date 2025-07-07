@@ -1,5 +1,5 @@
 === Maazicon ===
-Contributors: AmirhosseinMansourkiaei, Webangon
+Contributors: AmirhosseinMansourkiaei
 License: GPL-3.0
 License URL: https://opensource.org/licenses/GPL-3.0
 Tags: icon,elementor,elementor icon,svg
