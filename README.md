@@ -4,10 +4,9 @@ License: GPL-3.0
 License URL: https://opensource.org/licenses/GPL-3.0
 Tags: icon,elementor,elementor icon,svg
 Requires at least: 4.0
-Contributors: Webangon
 Tested up to: 6.8
 Requires PHP: 7.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 This plugin adds additional icons to Elementor. You can use the icons for free.
 
